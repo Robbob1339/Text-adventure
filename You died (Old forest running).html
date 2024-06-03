@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<!---->
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		
+		/*words*/
+		p {
+    color:black;
+    background-color: lightgreen;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-size: 25px;
+    text-align: center;
+		}
+		
+  /*background image*/
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .bg {
+    /* The image used */
+    background-image: url("https://64.media.tumblr.com/bfe90ef1addacef577bc2813d1cfd001/807f9e5a5e0ce538-eb/s1280x1920/5434e6201950f308e365f0e00496bb2e28f624f6.gif");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    flex-direction: column;
+  }
+		
+  .choice{
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  	color:black;
+	background-color:lightgreen;
+  }
+  
+  .choice:hover {
+    font-size: 25px;
+  }
+}
+		
+	</style>
+<meta charset="utf-8">
+<title>You died</title>
+</head>
+	<!--above is css-->
+	
+	
+	
+<!--body-->
+<body bgcolor="black">
+	<div class="bg">
+		
+		
+<!--text-->
+		<p>Bob gets scared by the village and decides the best thing to do is to run, however Bob forgot that he is in a dense forest and before he knows it, he is flying in the air falling down a sudden cliff.</p>
+	
+	<p id="You-Died">Click the button to restart.</p>
+		
+		<!--sound here-->
+		<audio>
+		<source src="placeholder" type="audio/placeholder">
+		</audio>
+		
+	<!--choices/buttons-->
+		<div class="container">
+  <div class="center">
+	<button id="myButton" class="choice" >Try again</button>
+		</div>
+		</div>
+		</div>
+		
+		<!--links for the buttons-->
+<script type="text/javascript">
+
+  document.getElementById("myButton").onclick = function () {
+    location.href = "file:///C:/Users/Student/Documents/Adobe/Noe%20zacarias%20Text%20adventure/Medieval%20text%20adventure..html";
+  }
+
+  document.getElementById("OthermyButton").onclick = function () {
+    location.href = "file:///C:/Users/Student/Documents/Adobe/Noe%20zacarias%20Text%20adventure/Medieval%20text%20adventure..html";
+  }
+
+  document.getElementById("Password").onclick = function () {
+    location.href = "file:///C:/Users/Student/Documents/Adobe/Noe%20zacarias%20Text%20adventure/Medieval%20text%20adventure..html";
+  }
+  
+  if (Math.random () < 1) {
+	document.getElementById("You-Died").innerHTML = "L"
+}
+</script>
+			
+
+	
+</body>
+</html>

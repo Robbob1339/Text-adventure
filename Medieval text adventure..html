@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+	<!--Home page of Hidden page-->
+<!--https://www.google.com/imgres?imgurl=https%3A%2F%2Fstorage.ko-fi.com%2Fcdn%2Fuseruploads%2Fdisplay%2F6ede6ca8-cf9c-400c-aab2-01e17023f17d_forest-export.gif&tbnid=sPdFj8MNM2MEFM&vet=10CAkQxiAoBGoYChMIiJT3k6e1hgMVAAAAAB0AAAAAEIcC..i&imgrefurl=https%3A%2F%2Fko-fi.com%2Fs%2Fb0ce22f4a0&docid=NLNdNIqvpZZHvM&w=1800&h=1200&itg=1&q=building%20animated%20gif%20forest&ved=0CAkQxiAoBGoYChMIiJT3k6e1hgMVAAAAAB0AAAAAEIcC-->
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		
+		/*words*/
+		p {
+    color:black;
+    background-color: lightgreen;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-size: 25px;
+    text-align: center;
+		}
+		
+  /*background image*/
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .bg {
+    /* The image used */
+    background-image: url("https://i.pinimg.com/originals/48/f1/46/48f146a29a066696f35f9f09773f25d8.gif");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    flex-direction: column;
+  }
+		
+  .choice{
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  	color:black;
+	background-color:lightgreen;
+  }
+  
+  .choice:hover {
+    font-size: 25px;
+  }
+}
+		
+	</style>
+<meta charset="utf-8">
+<title>Home page of the old Text Adventure</title>
+</head>
+	<!--above is css-->
+	
+	
+	
+<!--body-->
+<body bgcolor="black">
+	<div class="bg">
+		
+		
+<!--text-->
+		<p>Bob seems to have teleported to some river in the middle of a forest and has no idea where to go. </p>
+	
+	<p>Pick a choice from the buttons below.</p>
+		
+		<!--sound here-->
+		<audio>
+		<source src="placeholder" type="audio/placeholder">
+		</audio>
+		
+	<!--choices/buttons-->
+		<div class="container">
+  <div class="center">
+	<button id="myButton" class="choice" >Left</button>
+	<button id="OthermyButton" class="choice">Right</button>
+	  <button id="Password" class="choice">Forward, towards the waterfall.</button>
+		</div>
+		</div>
+		</div>
+		
+		<!--links for the buttons-->
+<script type="text/javascript">
+
+  document.getElementById("myButton").onclick = function () {
+    location.href = "file:///C:/Users/Student/Documents/Adobe/Noe%20zacarias%20Text%20adventure/Old%20Forest.html";
+  }
+
+  document.getElementById("OthermyButton").onclick = function () {
+    location.href = "file:///C:/Users/Student/Documents/Adobe/Noe%20zacarias%20Text%20adventure/Old%20text%20adventure%20globe.html";
+  }
+
+  document.getElementById("Password").onclick = function () {
+    location.href = "file:///C:/Users/Student/Documents/Adobe/Noe%20zacarias%20Text%20adventure/Medieval%20Waterfall%20(D).html";
+  }
+</script>
+			
+
+	
+</body>
+</html>

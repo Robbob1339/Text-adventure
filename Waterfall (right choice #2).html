@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ p {
+    color: indianred;
+    background-color:lightgoldenrodyellow;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-size: 25px;
+    text-align: center;
+  }
+
+  /*background image*/
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .bg {
+    /* The image used */
+    background-image: url("https://i.pinimg.com/originals/e2/85/66/e285661a023fb83c8d7f975980422c22.gif");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    flex-direction: column;
+  }
+
+   .choice {
+    color: indianred;
+    background-color: blanchedalmond;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .choice:hover {
+    font-size: 25px;
+  }
+</style>
+<meta charset="utf-8">
+<title>Waterfall (right choice #2)</title>
+<!--basically working with new code-->
+<!--attempted at remembering the style, so it might be different-->
+<!--body is below-->
+
+</head>
+<!--body-->
+
+<body class="bg">
+<p>Bob wakes up, and continues down the path. The path goes on for miles, until he comes to a stop in front of a waterfall</p>
+
+<div class="container">
+  <button id="choice-1" class="choice" onClick="myFunction(1)">Bob continues going forward towards the waterfall</button>
+
+  <button id="choice-2" class="choice" onClick="myFunction(2)">Bob decides to go right, away from the waterfall.</button>
+</div>
+
+<script>
+function myFunction(choice) {
+  switch(choice) {
+    case 1:
+      window.location = "file:///C:/Users/Student/Documents/Adobe/Noe%20zacarias%20Text%20adventure/Waterfall%20(code).html";
+      break;
+    case 2:
+      window.location = "file:///C:/Users/Student/Documents/Adobe/Noe%20zacarias%20Text%20adventure/Waterfall%20(radio).html";
+      break;
+    default:
+      break;
+  }
+}
+</script>
+
+</body>
+</html>
+

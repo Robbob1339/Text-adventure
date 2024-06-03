@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<!--6 endings-->
+<!--350657-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/*words*/
+p {
+    color: indianred;
+    background-color: aqua;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-size: 25px;
+    text-align: center;
+}
+
+/*background image*/
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/059/971/953/original/ryan-haight-seward-park-large.gif?1677549171");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    flex-direction: column;
+}
+
+#myButton{
+color:blue;
+background-color:lightcyan;
+}
+
+#OthermyButton{
+color:red;
+background-color:blanchedalmond;
+
+}
+
+#Password{
+color:#0080ff;
+background-color: #FFEBCD;
+
+}
+.choice {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.choice:hover {
+    font-size: 25px;
+}
+
+</style>
+<meta charset="utf-8">
+<title>Home page of the Text Adventure</title>
+</head>
+
+<!--body-->
+<body bgcolor="black">
+<div class="bg">
+<!--text-->
+<p id="hello">Bob was in an airplane when all of a sudden, the engines went out. Soon after, the plane broke into multiple pieces and quickly fell to the ground. Bob went unconscious once the plane hit the ground and soon woke up from the plane crash; he was stranded in the woods. Bob saw the chuck of the airline that he was in, and there were no other survivors from the crash. Bob eventually decides to walk through the forest in hopes of finding a building and eventually finds a path that has two ways to go. </p>
+<p id="hi">Pick a choice from the buttons below.</p>
+
+<!--sound here-->
+<audio>
+<source src="placeholder" type="audio/placeholder">
+</audio>
+
+<!--choices/buttons-->
+<div class="container">
+  <div class="center">
+    <button id="myButton" class="choice" >Left</button>
+    <button id="OthermyButton" class="choice">Right</button>
+    <button id="Password" class="choice" style="display: none;"><strong>?</strong></button>
+  </div>
+</div>
+</div>
+
+<!--links for the buttons-->
+<script type="text/javascript">
+
+document.getElementById("myButton").onclick = function () {
+  location.href = "file:///C:/Users/Student/Documents/Adobe/Noe%20zacarias%20Text%20adventure/Left%20main.html";
+}
+
+document.getElementById("OthermyButton").onclick = function () {
+  location.href = "file:///C:/Users/Student/Documents/Adobe/Noe%20zacarias%20Text%20adventure/Right%20home%20page.html";
+}
+
+
+if (Math.random() < 0.6) {
+  document.getElementById("Password").style.display = "block";
+}
+
+document.getElementById("Password").onclick = function () {
+  location.href = "file:///C:/Users/Student/Documents/Adobe/Text%20adventure%20(all%20pages)/Hidden%20page.html";
+}
+
+if (Math.random () < 0.04) {
+	document.getElementById("hi").innerHTML = ("The password is 350657");
+}
+	
+if (Math.random () < 0.01) {
+	document.getElementById("hello").innerHTML = ("Bob decided enough is enough and will sit here for all eternity.")
+}
+if (Math.random () < 0.0003) {
+	document.getElementById("hello").innerHTML = ("I clicked the question mark on the Home page of the Text Adventure (GONE WRONG)")
+}
+if (Math.random () < 0.01) {
+	document.getElementById("hello").innerHTML = ("No, the Password is actually 123456789101121314151617181920");
+}
+	
+if (Math.random () < 0.002) {
+	document.getElementById("hello").innerHTML = ("His name is not Bob.");
+}
+	
+if (Math.random () < 0.08) {
+	document.getElementById("hello").innetHTML = ("ignore if this text changes");
+}
+	
+if (Math.random () < 0.00005) {
+	document.getElementById ("hello").innerHTML = ("Hello world!");
+}
+	
+if (Math.random () <0.00007) {
+	document.getElementById ("hi").innerHTML = ("1+1=2");
+}
+
+</script>
+
+</body>
+</html>

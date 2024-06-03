@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/**/
+  p {
+    color:cadetblue;
+    background-color: azure;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-size: 25px;
+    text-align: center;
+  }
+
+  /*background image*/
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .bg {
+    /* The image used */
+    background-image: url("https://i.redd.it/mbt296685yi71.gif");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    flex-direction: column;
+  }
+
+  .choice {
+    color: blue;
+    background-color: lightcyan;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .choice:hover {
+    font-size: 25px;
+  }
+</style>
+<meta charset="utf-8">
+<title>Snow forest (Choice #2, Choice #1)</title>
+<!--basically working with new code-->
+<!--attempted at remembering the style, so it might be different-->
+<!--body is below-->
+
+</head>
+<!--body-->
+
+<body class="bg">
+
+
+<p>Bob finds a river, but is unsure to continue walking or attempt to find his way back to the path.</p>
+
+<div class="container">
+  <button id="choice-1" class="choice" onClick="myFunction(1)">Bob decides to follow the river upwards.</button>
+
+  <button id="choice-2" class="choice" onClick="myFunction(2)">Bob decides to follow the river downwards in hopes of finding the path.</button>
+</div>
+
+<script>
+function myFunction(choice) {
+  switch(choice) {
+    case 1:
+      window.location = "file:///C:/Users/Student/Documents/Adobe/Noe%20zacarias%20Text%20adventure/Snow%20Forest%20end%20of%20circles%20then%20forward.html";
+      break;
+    case 2:
+      window.location = "file:///C:/Users/Student/Documents/Adobe/Noe%20zacarias%20Text%20adventure/Snowy%20forest%20(Choice%20circles%20only%20end).html";
+      break;
+    default:
+      break;
+  }
+}
+</script>
+
+</body>
+</html>
+

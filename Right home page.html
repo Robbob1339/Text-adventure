@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*https://i.pinimg.com/originals/49/0b/7d/490b7df7702b12d16fbf44a015b2dc09.gif*/
+  p {
+    color: indianred;
+    background-color:lightgoldenrodyellow;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-size: 25px;
+    text-align: center;
+  }
+
+  /*background image*/
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .bg {
+    /* The image used */
+    background-image: url("https://cdna.artstation.com/p/assets/images/images/066/055/936/original/pixel_rice_bowl-cgaigzy.gif?1691940753");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    flex-direction: column;
+  }
+
+  .choice {
+    color: indianred;
+    background-color: blanchedalmond;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .choice:hover {
+    font-size: 25px;
+  }
+</style>
+<meta charset="utf-8">
+<title>Right (home page)</title>
+<!--basically working with new code-->
+<!--attempted at remembering the style, so it might be different-->
+<!--body is below-->
+
+</head>
+<!--body-->
+
+<body class="bg">
+
+
+<p>Bob decided to walk right on the path. Bob eventually picks up the pace after it starts raining and finds a cabin. Inside the cabin, he found vital resources that he would need to survive. </p>
+
+<div class="container">
+  <button id="choice-1" class="choice" onClick="myFunction(1)">Bob decides to travel throughout the night.</button>
+
+  <button id="choice-2" class="choice" onClick="myFunction(2)">Bob decides to get some rest and continue walking tomorrow</button>
+</div>
+
+<script>
+function myFunction(choice) {
+  switch(choice) {
+    case 1:
+      window.location = "file:///C:/Users/Student/Documents/Adobe/Noe%20zacarias%20Text%20adventure/Forest%20night.html";
+      break;
+    case 2:
+      window.location = "file:///C:/Users/Student/Documents/Adobe/Noe%20zacarias%20Text%20adventure/Waterfall%20(right%20choice%20%232).html";
+      break;
+    default:
+      break;
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+	<!--Home page of Hidden page-->
+<!--https://cdna.artstation.com/p/assets/images/images/029/965/672/original/michael-hyman-medi.gif?1599166255&dl=1-->
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		
+		/*words*/
+		p {
+    color:black;
+    background-color: lightgreen;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-size: 25px;
+    text-align: center;
+		}
+		
+  /*background image*/
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .bg {
+    /* The image used */
+    background-image: url("https://storage.ko-fi.com/cdn/useruploads/display/6ede6ca8-cf9c-400c-aab2-01e17023f17d_forest-export.gif");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    flex-direction: column;
+  }
+		
+  .choice{
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  	color:black;
+	background-color:lightgreen;
+  }
+  
+  .choice:hover {
+    font-size: 25px;
+  }
+}
+		
+	</style>
+<meta charset="utf-8">
+<title>Forest (main)</title>
+</head>
+	<!--above is css-->
+	
+	
+	
+<!--body-->
+<body bgcolor="black">
+	<div class="bg">
+		
+		
+<!--text-->
+		<p>Bob decides to go left and finds himself in a forest and sees small buildings and doors in the trees and the ground. </p>
+	
+	<p>Pick a choice from the buttons below.</p>
+		
+		<!--sound here-->
+		<audio>
+		<source src="placeholder" type="audio/placeholder">
+		</audio>
+		
+	<!--choices/buttons-->
+		<div class="container">
+  <div class="center">
+	<button id="myButton" class="choice" >Ask for help.</button>
+	<button id="OthermyButton" class="choice">Continue walking, but move around the village.</button>
+	  <button id="Password" class="choice">Run.</button>
+		</div>
+		</div>
+		</div>
+		
+		<!--links for the buttons-->
+<script type="text/javascript">
+
+  document.getElementById("myButton").onclick = function () {
+    location.href = "file:///C:/Users/Student/Documents/Adobe/Noe%20zacarias%20Text%20adventure/You%20died%20(Small%20village%20attack).html";
+  }
+
+  document.getElementById("OthermyButton").onclick = function () {
+    location.href = "file:///C:/Users/Student/Documents/Adobe/Noe%20zacarias%20Text%20adventure/Old%20Cabin%20in%20the%20Forest.html";
+  }
+
+  document.getElementById("Password").onclick = function () {
+    location.href = "file:///C:/Users/Student/Documents/Adobe/Noe%20zacarias%20Text%20adventure/You%20died%20(Old%20forest%20running).html";
+  }
+</script>
+			
+
+	
+</body>
+</html>

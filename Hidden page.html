@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  p {
+    color: indianred;
+    background-color:lightsteelblue;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-size: 25px;
+    text-align: center;
+  }
+
+  /*background image*/
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .bg {
+    /* The image used */
+    background-image: url("https://cdna.artstation.com/p/assets/images/images/045/885/292/original/giovanni-estrella-haunted-rain-gif.gif?1643771478");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    flex-direction: column;
+  }
+
+   .choice {
+    color: indianred;
+    background-color:lightsteelblue;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .choice:hover {
+    font-size: 25px;
+  }
+</style>
+<meta charset="utf-8">
+<title>Code page</title>
+<!--basically working with new code-->
+<!--attempted at remembering the style, so it might be different-->
+<!--body is below-->
+<!--350657 (code)-->
+</head>
+<!--body-->
+
+<body class="bg">
+<p>Bob decides to follow the path backwards and finds a building at the end of it. Bob goes inside the building and sees a machine that requires a code to be entered into it in order to power it on. </p>
+
+<div class="container">
+  <button id="choice-1" class="choice" onClick="checkPassword()">Enter password</button>
+
+  <button id="choice-2" class="choice" onClick="myFunction(2)">Return to home page.</button>
+</div>
+
+<script>
+function checkPassword() {
+  var password = prompt("Please enter the password:");
+  if (password === "350657") {
+    window.location = "file:///C:/Users/Student/Documents/Adobe/Noe%20zacarias%20Text%20adventure/Machine.html";
+  }else {
+    alert("Incorrect password. Please try again.");
+	  
+	  
+  }
+}
+
+function myFunction(choice) {
+  switch(choice) {
+    case 2:
+      window.location = "file:///C:/Users/Student/Documents/Adobe/Noe%20zacarias%20Text%20adventure/Text%20adventure%20project.html";
+      break;
+    default:
+      break;
+  }
+}
+	
+	//file:///C:/Users/Student/Documents/Adobe/Waterfall%20ending%202.0.html
+</script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/**/
+  p {
+    color:cadetblue;
+    background-color: azure;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-size: 25px;
+    text-align: center;
+  }
+
+  /*background image*/
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .bg {
+    /* The image used */
+    background-image: url("https://64.media.tumblr.com/8946032d185ae4768a40f48656ae18cf/2124e86be1dfbd93-c6/s640x960/a735d7a318699607e090361c437be7b4460482c9.gif");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    flex-direction: column;
+  }
+
+  .choice {
+    color: blue;
+    background-color: lightcyan;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .choice:hover {
+    font-size: 25px;
+  }
+</style>
+<meta charset="utf-8">
+<title>Snow forest (Choice #2, Choice #1)</title>
+<!--basically working with new code-->
+<!--attempted at remembering the style, so it might be different-->
+<!--body is below-->
+
+</head>
+<!--body-->
+
+<body class="bg">
+
+
+<p>Bob continues walking until he reaches a hill, on top of the hill Bob is able to see skyscrapers in the distance and quickly goes into the city and is saved.&nbsp; (___6___) </p>
+
+<div class="container">
+  <button id="choice-1" class="choice" onClick="myFunction(1)">Restart</button>
+
+</div>
+
+<script>
+function myFunction(choice) {
+  switch(choice) {
+    case 1:
+      window.location = "file:///C:/Users/Student/Documents/Adobe/Noe%20zacarias%20Text%20adventure/Text%20adventure%20project.html";
+      break;
+
+  }
+}
+</script>
+
+</body>
+</html>
+

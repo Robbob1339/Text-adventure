@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  p {
+    color: indianred;
+    background-color:lightgoldenrodyellow;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-size: 25px;
+    text-align: center;
+  }
+
+
+  /*background image*/
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .bg {
+    /* The image used */
+    background-image: url("https://i.imgur.com/YPQc9ad.gif");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    flex-direction: column;
+  }
+
+   .choice {
+    color: indianred;
+    background-color: blanchedalmond;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .choice:hover {
+    font-size: 25px;
+  }
+</style>
+<meta charset="utf-8">
+<title>Forest night end.</title>
+<!--basically working with new code-->
+<!--attempted at remembering the style, so it might be different-->
+<!--body is below-->
+
+</head>
+<!--body-->
+
+<body class="bg">
+<p>In the dark night, Bob was starting to get hopeless, however Bob saw a little glint of light. Bob approached the glint of light to witness it getting bigger and bigger untill he sees a village. Bob immedilty goes to the village, and asks for help. The people call for the authorities to come and help Bob to get back home.&nbsp; &nbsp;(3_____)</p>
+
+<div class="container">
+  <button id="choice-1" class="choice" onClick="myFunction(1)">Restart</button>
+
+</div>
+
+<script>
+function myFunction(choice) {
+  switch(choice) {
+    case 1:
+      window.location = "file:///C:/Users/Student/Documents/Adobe/Noe%20zacarias%20Text%20adventure/Text%20adventure%20project.html";
+      break;
+  }
+}
+</script>
+
+</body>
+</html>

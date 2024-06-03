@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*https://i.pinimg.com/originals/42/3f/7a/423f7a8d1fc4781086a6433b8f93b436.gif*/
+  p {
+    color:cadetblue;
+    background-color: azure;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-size: 25px;
+    text-align: center;
+  }
+
+  /*background image*/
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .bg {
+    /* The image used */
+    background-image: url("https://i.redd.it/mnslf2y8hxab1.gif");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    flex-direction: column;
+  }
+
+  .choice {
+    color: blue;
+    background-color: lightcyan;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .choice:hover {
+    font-size: 25px;
+  }
+</style>
+<meta charset="utf-8">
+<title>Left (main)</title>
+<!--basically working with new code-->
+<!--attempted at remembering the style, so it might be different-->
+<!--body is below-->
+
+</head>
+<!--body-->
+
+<body class="bg">
+
+
+<p>Bob decides to walk left. After a while, he soon realized that the path was fading away.</p>
+
+<div class="container">
+  <button id="choice-1" class="choice" onClick="myFunction(1)">Bob decides to keep going left in hopes of finding something at the end of the path</button>
+
+  <button id="choice-2" class="choice" onClick="myFunction(2)">Bob decides the best thing to do is to go back.</button>
+</div>
+
+<script>
+function myFunction(choice) {
+  switch(choice) {
+    case 1:
+      window.location = "file:///C:/Users/Student/Documents/Adobe/Noe%20zacarias%20Text%20adventure/Snow%20forest%20(main).html";
+      break;
+    case 2:
+      window.location = "file:///C:/Users/Student/Documents/Adobe/Noe%20zacarias%20Text%20adventure/Text%20adventure%20project.html";
+      break;
+    default:
+      break;
+  }
+}
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+	
+	
+	
+	
+	
+	<!--CHOICE #2-->
+	
+	
+	
+	
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		
+	p{
+			color:black;
+			font-size:25px;
+			top:40px;
+			left:40px;
+			font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+			font-weight: 900;
+			background-color:cadetblue;
+			text-align:center;
+		}
+		
+		
+		/*background image*/
+		body, html {
+  height: 100%;
+}
+
+.bg {
+  /* The image*/
+  background-image: url("https://i.pinimg.com/originals/44/ca/cc/44cacc064439a23a94806013fc480509.jpg");
+
+  /* Full height */
+  height: 100%;
+
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+		
+/*buttons*/
+		.buttons:hover{
+		 width:250px;
+		 height:150px;
+		}
+		.buttons{
+		width:200px;
+		height:100px;
+		background-color: limegreen;
+  		color: white;
+  		text-align: center;
+  		font-size: 16px;
+		}
+		
+		.container { 
+  height: 200px;
+  position: relative;
+ 
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+	
+	
+	
+	</style>
+<meta charset="utf-8">
+<title>Text adventure part 2 </title>
+</head>
+
+<!--body is below-->	
+	
+	
+<body bgcolor="black">
+	<div class="bg">
+	<!--placeholder-->
+		
+		<p>1+1=2</p>
+	
+	<p>Pick a choice from the buttons below.</p>
+		
+			<!--sound here-->
+		<audio>
+		<source src="placeholder" type="audio/placeholder">
+		<source src="placeholder" type="audio/placeholder">
+		
+		</audio>
+		
+		
+	<!--choices-->
+	
+		<div class="container">
+  <div class="center">
+	<button id="myButton" class="buttons" >Choice 1</button>
+	<button id="OthermyButton" class="buttons">Choice 2</button>
+		</div>
+		</div>
+		<!--links-->
+		
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "https://www.google.com/";}
+	
+	document.getElementById("OthermyButton").onclick = function () {
+        location.href = "https://www.google.com/";}
+	
+	
+		</script>
+		</div>
+		</body>
+</html>
